@@ -1,0 +1,5 @@
+ARG_ENABLE("blake3", "BLAKE3 support", "no");
+
+if (PHP_BLAKE3 != "no") {
+    EXTENSION("blake3", "src\\blake3.c src\\php_blake3.c");
+}

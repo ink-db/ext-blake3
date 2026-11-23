@@ -1,0 +1,17 @@
+{
+  "name": "ink/ext-blake3",
+  "description": "Portable BLAKE3 PHP extension with a PHP API fallback",
+  "type": "library",
+  "license": "Apache-2.0 OR CC0-1.0",
+  "require": {
+    "php": ">=8.1"
+  },
+  "autoload": {
+    "files": [
+      "polyfill.php"
+    ],
+    "psr-4": {
+      "blake3\\": "classes/"
+    }
+  }
+}
